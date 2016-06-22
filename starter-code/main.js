@@ -3,11 +3,8 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-console.log(cardOne === cardTwo);
-console.log(cardOne === cardFour);
 
-
-
+/*
 if(cardTwo === cardFour){
 	alert("Sorry, try again.");
 } else if(cardTwo === cardThree){
@@ -21,3 +18,20 @@ if(cardTwo === cardFour){
 } else if(cardThree === cardFour){
 	alert("You found a match!");
 }
+*/
+
+var gameBoard = document.getElementById('game-board');
+
+
+
+
+
+var createBoard = function(){
+	for(var i=0; i < 4; i++){
+		var newCard = document.createElement('div');
+		newCard.className = 'card';
+		gameBoard.appendChild(newCard);
+	}
+}
+
+createBoard();
