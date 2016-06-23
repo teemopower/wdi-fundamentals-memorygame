@@ -6,6 +6,8 @@
 	border-width: 1px;
 	background-color: yellow;
 	border-radius: 10px;
+	float: left;
+	margin: 10px; 
 }
 
 .board{
@@ -65,4 +67,9 @@ header{
 footer{
 	background-color: #808080;
 	text-align: center;
+}
+
+img{
+	height: 200px;
+	width: 150px;
 }
